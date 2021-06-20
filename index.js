@@ -1,4 +1,4 @@
-const shmoment = (initialDate) => {
+export const shmoment = (initialDate) => {
   let result = initialDate;
   const constructor = {
     add(str, number) {
