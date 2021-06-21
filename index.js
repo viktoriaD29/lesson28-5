@@ -21,22 +21,22 @@ export const shmoment = (initDate) => {
         copyDate.setFullYear(initDate.getFullYear() + number);
       }
       if (str === 'months') {
-        copyDate.setFullYear(initDate.getFullYear() + number);
+        copyDate.setMonth(initDate.getMonth() + number);
       }
       if (str === 'days') {
-        copyDate.setFullYear(initDate.getFullYear() + number);
+        copyDate.setDate(initDate.getDate() + number);
       }
       if (str === 'hours') {
-        copyDate.setFullYear(initDate.getFullYear() + number);
+        copyDate.setHours(initDate.getHours() + number);
       }
       if (str === 'minutes') {
-        copyDate.setFullYear(initDate.getFullYear() + number);
+        copyDate.setMinutes(initDate.getMinutes() + number);
       }
       if (str === 'seconds') {
-        copyDate.setFullYear(initDate.getFullYear() + number);
+        copyDate.setSeconds(initDate.getSeconds() + number);
       }
       if (str === 'milliseconds') {
-        copyDate.setFullYear(initDate.getFullYear() + number);
+        copyDate.setMilliseconds(initDate.getMilliseconds() + number);
       }
       return this;
     },
@@ -45,22 +45,22 @@ export const shmoment = (initDate) => {
         copyDate.setFullYear(initDate.getFullYear() - number);
       }
       if (str === 'months') {
-        copyDate.setFullYear(initDate.getFullYear() - number);
+        copyDate.setMonth(initDate.getMonth() - number);
       }
       if (str === 'days') {
-        copyDate.setFullYear(initDate.getFullYear() - number);
+        copyDate.setDate(initDate.getDate() - number);
       }
       if (str === 'hours') {
-        copyDate.setFullYear(initDate.getFullYear() - number);
+        copyDate.setHours(initDate.getHours() - number);
       }
       if (str === 'minutes') {
-        copyDate.setFullYear(initDate.getFullYear() - number);
+        copyDate.setMinutes(initDate.getMinutes() - number);
       }
       if (str === 'seconds') {
-        copyDate.setFullYear(initDate.getFullYear() - number);
+        copyDate.setSeconds(initDate.getSeconds() - number);
       }
       if (str === 'milliseconds') {
-        copyDate.setFullYear(initDate.getFullYear() - number);
+        copyDate.setMilliseconds(initDate.getMilliseconds() - number);
       }
       return this;
     },
