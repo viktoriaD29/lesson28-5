@@ -12,7 +12,7 @@
 //5.повертаємо з кожного методу посилання на обєкт
 //6.повертаємо обєкт
 
-const shmoment = (initDate) => {
+export const shmoment = (initDate) => {
   let copyDate = new Date(Number(initDate));
 
   const constructor = {
@@ -20,10 +20,46 @@ const shmoment = (initDate) => {
       if (str === 'years') {
         copyDate.setFullYear(initDate.getFullYear() + number);
       }
+      if (str === 'months') {
+        copyDate.setFullYear(initDate.getFullYear() + number);
+      }
+      if (str === 'days') {
+        copyDate.setFullYear(initDate.getFullYear() + number);
+      }
+      if (str === 'hours') {
+        copyDate.setFullYear(initDate.getFullYear() + number);
+      }
+      if (str === 'minutes') {
+        copyDate.setFullYear(initDate.getFullYear() + number);
+      }
+      if (str === 'seconds') {
+        copyDate.setFullYear(initDate.getFullYear() + number);
+      }
+      if (str === 'milliseconds') {
+        copyDate.setFullYear(initDate.getFullYear() + number);
+      }
       return this;
     },
     subtract(str, number) {
       if (str === 'years') {
+        copyDate.setFullYear(initDate.getFullYear() - number);
+      }
+      if (str === 'months') {
+        copyDate.setFullYear(initDate.getFullYear() - number);
+      }
+      if (str === 'days') {
+        copyDate.setFullYear(initDate.getFullYear() - number);
+      }
+      if (str === 'hours') {
+        copyDate.setFullYear(initDate.getFullYear() - number);
+      }
+      if (str === 'minutes') {
+        copyDate.setFullYear(initDate.getFullYear() - number);
+      }
+      if (str === 'seconds') {
+        copyDate.setFullYear(initDate.getFullYear() - number);
+      }
+      if (str === 'milliseconds') {
         copyDate.setFullYear(initDate.getFullYear() - number);
       }
       return this;
@@ -35,8 +71,10 @@ const shmoment = (initDate) => {
   return constructor;
 };
 const result = shmoment(new Date(2020, 0, 7, 17, 17, 17))
-  .add('years', 4)
   .subtract('years', 1)
+  .add('years', 4)
+  .add('month', 3)
+  .subtract('minutes', 1)
   .result();
 console.log(result);
 
